@@ -81,7 +81,10 @@ $ git clone https://github.com/edcruz29/Qtruckfull2.0.git
   7.2. Peça para executar *_login.cy.js_* <br/>
   7.3  onde irá carregar os cenários de login que foram criados.  <br/>
 
+*Desafio 1*
+*Desafio 2*
+
 *Em manutenção*
 
-*Autora:* EdCruz <br/>
+*Autor:* EdCruz <br/>
 *Curso:* QAcademy Bootcamp [Avançado em Cypress]
