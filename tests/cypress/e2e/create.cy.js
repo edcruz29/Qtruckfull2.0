@@ -96,7 +96,7 @@ describe('Recomendação', () => {
         mapPage.createLink()
         createPage.form(foodtruck)
         createPage.submit()
-        createPage.modal.haveText('O campos nome, descrição e horário de funcionamento devem ser informados para recomendar um food truck!')
+        createPage.modal.haveText('Os campos nome, descrição e horário de funcionamento devem ser informados para recomendar um food truck!')
     })
     it('Nome obrigatório', ()=>{
         const user = {
@@ -119,7 +119,7 @@ describe('Recomendação', () => {
         mapPage.createLink()
         createPage.form(foodtruck)
         createPage.submit()
-        createPage.modal.haveText('O campos nome, descrição e horário de funcionamento devem ser informados para recomendar um food truck!')
+        createPage.modal.haveText('Os campos nome, descrição e horário de funcionamento devem ser informados para recomendar um food truck!')
     })
     it('Descrição obrigatória', ()=>{
         const user = {
@@ -142,7 +142,7 @@ describe('Recomendação', () => {
         mapPage.createLink()
         createPage.form(foodtruck)
         createPage.submit()
-        createPage.modal.haveText('O campos nome, descrição e horário de funcionamento devem ser informados para recomendar um food truck!')
+        createPage.modal.haveText('Os campos nome, descrição e horário de funcionamento devem ser informados para recomendar um food truck!')
     })
     it('Horário obrigatório', ()=>{
         const user = {
@@ -165,6 +165,6 @@ describe('Recomendação', () => {
         mapPage.createLink()
         createPage.form(foodtruck)
         createPage.submit()
-        createPage.modal.haveText('O campos nome, descrição e horário de funcionamento devem ser informados para recomendar um food truck!')
+        createPage.modal.haveText('Os campos nome, descrição e horário de funcionamento devem ser informados para recomendar um food truck!')
     })
 })
