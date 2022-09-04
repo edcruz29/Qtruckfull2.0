@@ -24,7 +24,7 @@ describe('cadastro',()=>{
       signupPage.modal.haveText('Agora você pode recomendar e/ou avaliar Food trucks.')
     });
     
-    it.only('Não deve permitir cadastro com instagram duplicado', () => {
+    it('Não deve permitir cadastro com instagram duplicado', () => {
 
         const user ={
             name:"Karine",

@@ -9,7 +9,7 @@ describe('Login', () => {
       instagram:"@edubehemoth",
       password:"cDz#2020"
     }
-    const name="Eduardo"
+    const name="EdCruz"
 
     //Login com PageObject
     loginPage.go()
@@ -49,9 +49,9 @@ describe('Login', () => {
     }
     const text="Credenciais inválidas, tente novamente!"
 
-    LoginPage.go()
-    LoginPage.form(user)
-    LoginPage.submit()
+    loginPage.go()
+    loginPage.form(user)
+    loginPage.submit()
     
     //cy.login(user)
 
@@ -66,9 +66,9 @@ describe('Login', () => {
     }
    const  text="Credenciais inválidas, tente novamente!"
 
-   LoginPage.go()
-    LoginPage.form(user)
-    LoginPage.submit()
+   loginPage.go()
+    loginPage.form(user)
+    loginPage.submit()
 
     //cy.login(user)
     cy.modalHaveText(text)
@@ -83,9 +83,9 @@ describe('Login', () => {
     }
     const  text="Por favor, informe o seu código do Instagram!"
 
-    LoginPage.go()
-    LoginPage.form(user)
-    LoginPage.submit()
+    loginPage.go()
+    loginPage.form(user)
+    loginPage.submit()
     //cy.login(user)
     // cy.instagramObrigatorio(user)
     cy.modalHaveText(text)
@@ -101,9 +101,9 @@ describe('Login', () => {
     const  text="Por favor, informe a sua senha secreta!"
     // cy.senhaObrigatoria(user)
 
-    LoginPage.go()
-    LoginPage.form(user)
-    LoginPage.submit()
+    loginPage.go()
+    loginPage.form(user)
+    loginPage.submit()
     //cy.login(user)
     cy.modalHaveText(text)
     
@@ -119,8 +119,8 @@ describe('Login', () => {
     // cy.vazios()
     //cy.login({})
 
-    LoginPage.go()
-    LoginPage.submit()
+    loginPage.go()
+    loginPage.submit()
     //cy.login(user)
     cy.modalHaveText(text)
 

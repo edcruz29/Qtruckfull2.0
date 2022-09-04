@@ -47,13 +47,11 @@ describe('Recomendação', () => {
        
         
         cy.apiCreateUser(user)
-        cy.uiLogin(user)
+        cy.apiLogin(user)
+        cy.apiCreateFoodTruck(foodtruck)
 
-        mapPage.createLink()
-        createPage.form(foodtruck)
-        createPage.submit()
-        createPage.modal.haveText('Food truck cadastrado com sucesso!')
-        createPage.modal.confirm()
+
+        cy.uiLogin(user)
 
         mapPage.createLink()
         createPage.form(foodtruck)

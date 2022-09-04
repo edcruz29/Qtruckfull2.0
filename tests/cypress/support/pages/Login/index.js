@@ -6,8 +6,8 @@ class LoginPage{
         this.modal = modal
     }
 
-    go(){
-        cy.visit('/')
+    go(lat = '-23.55052', long = '-46.633309') {
+        cy.visit('/', this.mockLocation(lat, long))
     }
     form(user){
         if (user.instagram) cy.get('input[name=instagram]').type(user.instagram)
@@ -15,6 +15,19 @@ class LoginPage{
     }
     submit(){
         cy.contains('button', 'Entrar').click()
+    }
+
+    mockLocation(latitude, longitude) {
+        return {
+            onBeforeLoad(win) {
+                cy.stub(win.navigator.geolocation, "getCurrentPosition").callsFake((cb, err) => {
+                    if (latitude && longitude) {
+                        return cb({ coords: { latitude, longitude } })
+                    }
+                    throw err({ code: 1 })
+                });
+            }
+        }
     }
 
 }
