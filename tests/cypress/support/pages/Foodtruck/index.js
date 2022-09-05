@@ -11,6 +11,9 @@ class FoodTruckPage {
         .should('be.visible')
         .should('have.text', user.name)
 
+        cy.get('div.stars')
+        .should('be.visible')
+
         cy.get('.comment')
         .should('be.visible')
         .should('have.text', review.comment)
